@@ -6,7 +6,7 @@ internal class Program
     public static void Main(string[] args)
     {
         // Declarations
-        string file = $"{Environment.CurrentDirectory}/movies.csv";
+        string file = $"{Environment.CurrentDirectory}\\data\\movies.csv";
         string menuOption;
 
         do
@@ -93,7 +93,7 @@ internal class Program
             }
             else if (!File.Exists(file))
             {
-                Console.WriteLine($"{file} file does not exist");
+                Console.WriteLine($"{file} does not exist.");
             }
         } while (menuOption == "1" || menuOption == "2");
     }
