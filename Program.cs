@@ -30,6 +30,8 @@ internal class Program
                 Console.WriteLine($"{file} does not exist.");
             }
         } while (menuOption == "1" || menuOption == "2");
+
+        Console.WriteLine("\nShutting Down...");
     }
 
     public static List<string> AddGenres()
